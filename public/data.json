@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Modern Warehouse Complex",
+      "segment_name": "Industrial",
+      "description": "This modern warehouse complex offers a versatile solution for businesses requiring ample storage and distribution space. Spanning over 200,000 square feet, it features high ceilings, large loading docks, and advanced security systems to ensure the safekeeping of inventory. Strategically located near major transportation routes, this complex facilitates efficient logistics operations for e-commerce fulfillment, manufacturing supplies, and wholesale distribution. Whether for short-term warehousing needs or long-term lease agreements, this facility provides the infrastructure and flexibility to support various industrial activities.",
+      "price": "$8,000,000",
+      "status": "sale",
+      "area": "200,000 sqft",
+      "location": "Houston, Texas",
+      "facilities": ["loading docks", "security systems"],
+      "image": "https://i.ibb.co/F3Y5012/warwhouse.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "State-of-the-Art Production Plant",
+      "segment_name": "Industrial",
+      "description": "Step into the future with this state-of-the-art production plant designed for high-volume manufacturing and assembly operations. Boasting cutting-edge machinery, robotics, and automation systems, it offers unparalleled efficiency and precision in production processes. Spread across 150,000 square feet, this facility includes clean rooms, testing labs, and R&D centers to support innovation and quality control. Located in an industrial park with access to skilled labor and supply chain networks, this plant is poised to meet the demands of modern manufacturing across various industries.",
+      "price": "$12,500,000",
+      "status": "sale",
+      "area": "150,000 sqft",
+      "location": "Detroit, Michigan",
+      "facilities": ["machinery", "robotics", "clean rooms", "testing labs", "R&D centers"],
+      "image": "https://i.ibb.co/C0xP6bK/production.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Industrial Park Development",
+      "segment_name": "Industrial",
+      "description": "Embark on a new venture with this industrial park development opportunity offering expansive land parcels for warehouses, factories, and production facilities. Situated on 500 acres of prime real estate, this development is strategically located near major highways and logistical hubs, facilitating easy access to transportation networks. Whether for establishing manufacturing hubs, distribution centers, or research facilities, this industrial park provides the infrastructure and zoning flexibility to accommodate a wide range of industrial activities. With customizable lot sizes and competitive pricing, it presents a lucrative investment opportunity in the booming industrial sector.",
+      "price": "$20,000,000",
+      "status": "sale",
+      "area": "500 acres",
+      "location": "Dallas, Texas",
+      "facilities": ["land parcels", "zoning flexibility"],
+      "image": "https://i.ibb.co/xshYsGM/park.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Cold Storage Facility",
+      "segment_name": "Industrial",
+      "description": "Ensure the freshness and integrity of perishable goods with this specialized cold storage facility equipped with state-of-the-art refrigeration systems. Spanning 100,000 square feet, this facility offers temperature-controlled environments suitable for storing food products, pharmaceuticals, and other sensitive materials. Strategically located near ports and distribution centers, it provides efficient access to transportation networks for import/export activities. Whether for short-term storage needs or long-term lease agreements, this cold storage facility offers the reliability and security necessary for preserving perishable goods in the supply chain.",
+      "price": "$15,000,000",
+      "status": "sale",
+      "area": "100,000 sqft",
+      "location": "Los Angeles, California",
+      "facilities": ["refrigeration systems", "temperature-controlled environments"],
+      "image": "hhttps://i.ibb.co/sFpz0hQ/5.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Power Plant Complex",
+      "segment_name": "Industrial",
+      "description": "Empower your operations with this power plant complex equipped to generate electricity for industrial, commercial, and residential consumers. Featuring a mix of traditional and renewable energy sources, this complex includes turbines, generators, solar arrays, and wind turbines to maximize energy efficiency and sustainability. With a total capacity of 500 megawatts, it can meet the power needs of large-scale manufacturing facilities, data centers, and urban communities. Located near utility substations and transmission lines, this power plant complex offers reliable energy supply and grid stability to support economic growth and environmental stewardship.",
+      "price": "$50,000,000",
+      "status": "sale",
+      "area": "100 acres",
+      "location": "Phoenix, Arizona",
+      "facilities": ["turbines", "generators", "solar arrays", "wind turbines"],
+      "image": "https://i.ibb.co/WfnbCpw/powerplant.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Industrial Office Park",
+      "segment_name": "Industrial",
+      "description": "Combine office space with industrial functionality in this versatile industrial office park catering to businesses with diverse operational needs. Featuring a mix of office buildings, warehouses, and manufacturing facilities, it offers a comprehensive solution for administrative, production, and distribution functions. With flexible lease agreements and customizable floor plans, businesses can tailor their workspace to suit their specific requirements. Strategically located near urban centers and transportation hubs, this office park provides convenient access to markets, suppliers, and skilled labor pools, making it an ideal location for industrial businesses seeking growth and efficiency.",
+      "price": "$30,000,000",
+      "status": "sale",
+      "area": "300,000 sqft",
+      "location": "Atlanta, Georgia",
+      "facilities": ["office buildings", "warehouses", "manufacturing facilities"],
+      "image": "https://i.ibb.co/L6Y4k9L/offfice.jpg"
+    },
+    {
+      "id": 7,
+      "estate_title": "Advanced Robotics Manufacturing Facility",
+      "segment_name": "Industrial",
+      "description": "Lead the way in innovation with this advanced robotics manufacturing facility equipped to produce cutting-edge automation technologies. Featuring robotic assembly lines, 3D printing labs, and AI-powered quality control systems, it offers state-of-the-art capabilities for developing industrial robots, autonomous vehicles, and consumer electronics. With a team of skilled engineers and technicians, this facility can handle complex manufacturing processes and rapid prototyping projects. Located in a technology hub with access to research institutions and industry partners, it fosters collaboration and innovation in the rapidly evolving field of robotics.",
+      "price": "$25,000,000",
+      "status": "sale",
+      "area": "200,000 sqft",
+      "location": "San Francisco, California",
+      "facilities": ["robotic assembly lines", "3D printing labs", "AI-powered quality control systems"],
+      "image": "https://i.ibb.co/DM76mSp/robot.jpg"
+    },
+    {
+      "id": 8,
+      "estate_title": "Industrial Logistics Center",
+      "segment_name": "Industrial",
+      "description": "Streamline your supply chain operations with this industrial logistics center offering integrated warehousing, transportation, and distribution services. Strategically located near major highways, railways, and ports, it provides seamless connectivity to regional and global markets. Featuring advanced inventory management systems, RFID tracking, and cross-docking facilities, it ensures efficient handling and delivery of goods. Whether for storing inventory, processing orders, or coordinating freight shipments, this logistics center offers the infrastructure and expertise to optimize supply chain efficiency and enhance customer satisfaction.",
+      "price": "$35,000,000",
+      "status": "sale",
+      "area": "400,000 sqft",
+      "location": "Chicago, Illinois",
+      "facilities": ["warehousing", "transportation", "distribution services"],
+      "image": "https://i.ibb.co/yYp5gKJ/center.jpg"
+    },
+    {
+      "id": 9,
+      "estate_title": "Industrial Research Campus",
+      "segment_name": "Industrial",
+      "description": "Drive innovation and collaboration in this industrial research campus designed to foster creativity and technological advancement. Featuring research laboratories, incubator spaces, and collaboration hubs, it provides a supportive environment for startups, tech companies, and research institutions. With access to state-of-the-art equipment, funding opportunities, and mentorship programs, entrepreneurs and innovators can bring their ideas to life and accelerate their ventures. Located in a vibrant innovation ecosystem, this research campus offers networking opportunities, talent recruitment, and access to potential investors, positioning it as a catalyst for economic growth and technological innovation.",
+      "price": "$40,000,000",
+      "status": "sale",
+      "area": "500,000 sqft",
+      "location": "Boston, Massachusetts",
+      "facilities": ["research laboratories", "incubator spaces", "collaboration hubs"],
+      "image": "https://i.ibb.co/C7JGgT9/rama.jpg"
+    }
+  ]
+  
