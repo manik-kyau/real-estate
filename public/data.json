@@ -20,7 +20,7 @@
       "status": "sale",
       "area": "150,000 sqft",
       "location": "Detroit, Michigan",
-      "facilities": ["machinery", "robotics", "clean rooms", "testing labs", "R&D centers"],
+      "facilities": ["clean rooms", "testing labs"],
       "image": "https://i.ibb.co/C0xP6bK/production.jpg"
     },
     {
@@ -44,8 +44,8 @@
       "status": "sale",
       "area": "100,000 sqft",
       "location": "Los Angeles, California",
-      "facilities": ["refrigeration systems", "temperature-controlled environments"],
-      "image": "hhttps://i.ibb.co/sFpz0hQ/5.jpg"
+      "facilities": ["refrigeration systems", "temperature-controlled"],
+      "image": "https://i.ibb.co/sFpz0hQ/5.jpg"
     },
     {
       "id": 5,
@@ -56,7 +56,7 @@
       "status": "sale",
       "area": "100 acres",
       "location": "Phoenix, Arizona",
-      "facilities": ["turbines", "generators", "solar arrays", "wind turbines"],
+      "facilities": ["solar arrays", "wind turbines"],
       "image": "https://i.ibb.co/WfnbCpw/powerplant.jpg"
     },
     {
@@ -68,7 +68,7 @@
       "status": "sale",
       "area": "300,000 sqft",
       "location": "Atlanta, Georgia",
-      "facilities": ["office buildings", "warehouses", "manufacturing facilities"],
+      "facilities": ["office buildings","manufacturing facilities"],
       "image": "https://i.ibb.co/L6Y4k9L/offfice.jpg"
     },
     {
@@ -80,7 +80,7 @@
       "status": "sale",
       "area": "200,000 sqft",
       "location": "San Francisco, California",
-      "facilities": ["robotic assembly lines", "3D printing labs", "AI-powered quality control systems"],
+      "facilities": ["robotic lines", "3D printing labs"],
       "image": "https://i.ibb.co/DM76mSp/robot.jpg"
     },
     {
@@ -92,7 +92,7 @@
       "status": "sale",
       "area": "400,000 sqft",
       "location": "Chicago, Illinois",
-      "facilities": ["warehousing", "transportation", "distribution services"],
+      "facilities": ["warehousing", "transportation"],
       "image": "https://i.ibb.co/yYp5gKJ/center.jpg"
     },
     {
@@ -104,7 +104,7 @@
       "status": "sale",
       "area": "500,000 sqft",
       "location": "Boston, Massachusetts",
-      "facilities": ["research laboratories", "incubator spaces", "collaboration hubs"],
+      "facilities": [ "incubator spaces", "collaboration hubs"],
       "image": "https://i.ibb.co/C7JGgT9/rama.jpg"
     }
   ]

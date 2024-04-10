@@ -5,6 +5,7 @@ import { AuthContext } from "../../Providers/AuthProvider";
 const NavBar = () => {
 
     const {user,logOut} = useContext(AuthContext);
+    console.log(user);
 
     const handleLogOut = ()=>{
         logOut()
@@ -16,8 +17,8 @@ const NavBar = () => {
 
     const NavItems = <>
         <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/login'>Login</NavLink></li>
-        <li><NavLink to='/register'>Register</NavLink></li>
+        {/* <li><NavLink to='/login'>Login</NavLink></li> */}
+        {/* <li><NavLink to='/register'>Register</NavLink></li> */}
     </>
     return (
         <div>
@@ -31,7 +32,7 @@ const NavBar = () => {
                             {NavItems}
                         </ul>
                     </div>
-                    <a className="text-3xl font-bold">daisyUI</a>
+                    <a className="text-3xl font-bold">FactoryNexus</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
