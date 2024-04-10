@@ -1,20 +1,29 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
+
+    const { signIn } = useContext(AuthContext);
 
     const handleLoginForm =(e)=>{
 
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
+
+        signIn(email, password)
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>console.log(error))
     }
 
     return (
         <div className="flex justify-center">
             <div className="w-full max-w-md p-4 rounded-md shadow-2xl sm:p-8 dark:bg-gray-50 dark:text-gray-800 my-8 lg:my-12">
                 <h2 className="mb-3 text-3xl lg:text-4xl font-semibold text-center">Login to your account</h2>
-                <p className="text-base text-center dark:text-gray-600">Dont have account?
+                <p className="text-base text-center dark:text-gray-600">Don't have account?
                     <Link to='/register' rel="noopener noreferrer" className="focus:underline hover:underline font-bold ml-1">Register here</Link>
                 </p>
                 <div className="my-6 space-y-4">
