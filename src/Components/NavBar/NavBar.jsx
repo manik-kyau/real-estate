@@ -1,11 +1,13 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import User from '../../assets/images/user.png'
 
 const NavBar = () => {
 
     const {user,logOut} = useContext(AuthContext);
     // console.log(user);
+    // const {photoURL,displayName} = user;
 
     const handleLogOut = ()=>{
         logOut()
@@ -17,12 +19,15 @@ const NavBar = () => {
 
     const NavItems = <>
         <li><NavLink to='/'>Home</NavLink></li>
+        {
+            user && <li><NavLink to='/userprofile'>UserProfile</NavLink></li>
+        }
         {/* <li><NavLink to='/login'>Login</NavLink></li> */}
         {/* <li><NavLink to='/register'>Register</NavLink></li> */}
     </>
     return (
         <div>
-            <div className="navbar bg-base-100 mt-8 border-2">
+            <div className="navbar bg-base-100 mt-8">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,8 +46,11 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-end space-x-5">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                        {/* <div className="w-10 rounded-full mr-">
+                            <abbr title={displayName}><img alt="Tailwind CSS Navbar component" src={user ? photoURL : User} /></abbr>
+                        </div> */}
                         <div className="w-10 rounded-full mr-">
-                            <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                            <abbr title='sorkar saheb'><img alt="Tailwind CSS Navbar component" src={User} /></abbr>
                         </div>
                     </div>
                         {
