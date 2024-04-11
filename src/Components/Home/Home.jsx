@@ -1,12 +1,18 @@
+import { Helmet } from "react-helmet-async";
 import Banner from "../Banner/Banner";
 import IndustryCard from "../IndustryCard/IndustryCard";
 import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
+
     const industrialData = useLoaderData();
-    console.log(industrialData);
+    
     return (
         <div>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
+            
             <Banner></Banner>
             <div className="text-center my-8 space-y-4">
                 <h2 className="text-4xl font-bold"> Exploring the World of FactoryNexus</h2>

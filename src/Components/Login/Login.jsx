@@ -1,10 +1,15 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { useLocation,useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
 
     const { signIn } = useContext(AuthContext);
+    const location = useLocation();
+    console.log(location);
+    const navigate = useNavigate();
 
     const handleLoginForm =(e)=>{
 
@@ -15,12 +20,19 @@ const Login = () => {
         signIn(email, password)
         .then(result=>{
             console.log(result.user);
+
+            // Navigate after login
+            navigate(location?.state ? location.state : '/');
         })
         .catch(error=>console.log(error))
     }
 
     return (
-        <div className="flex justify-center">
+        <>
+        <Helmet>
+            <title>Login</title>
+        </Helmet>
+            <div className="flex justify-center">
             <div className="w-full max-w-md p-4 rounded-md shadow-2xl sm:p-8 dark:bg-gray-50 dark:text-gray-800 my-8 lg:my-12">
                 <h2 className="mb-3 text-3xl lg:text-4xl font-semibold text-center">Login to your account</h2>
                 <p className="text-base text-center dark:text-gray-600">Don't have account?
@@ -63,6 +75,7 @@ const Login = () => {
                 </form>
             </div>
         </div>
+        </>
     );
 };
 

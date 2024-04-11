@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
 
@@ -30,6 +31,9 @@ const Register = () => {
     }
     return (
         <div className="">
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
             <section className="p-6 dark:text-gray-800">
                 <form onSubmit={handleRegistrationForm} className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow-2xl dark:bg-gray-50 border border-red-600">
                     <h2 className="w-full text-3xl font-bold leading-tight">Registration Now</h2>
