@@ -66,10 +66,10 @@ const Login = () => {
         // reaet error 
         setLoginError('');
 
-        if (user.email !== email) {
-            setErrorEmail('Your email is invalid');
-            return;
-        }
+        // if (user.email !== email) {
+        //     setErrorEmail('Your email is invalid');
+        //     return;
+        // }
 
         signIn(email, password)
             .then(result => {
@@ -82,7 +82,13 @@ const Login = () => {
             .catch(error => {
                 {
                     console.log(error);
-                    setLoginError('Please Enter a valid Password.')
+                    if (user.email !== email) {
+                            // setErrorEmail('Your email is invalid');
+                            toast.error('Invaild Email');
+                            return;
+                        }
+                    // setLoginError('Please Enter a valid Password.')
+                    toast.error(error.message);
                     
                 }
             })

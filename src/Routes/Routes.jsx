@@ -2,11 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Error from "../Components/ErrorPage/Error";
 import Root from "../Root/Root";
 import Home from "../Components/Home/Home";
-import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import IndustryDetails from "../Components/IndustryDetails/IndustryDetails";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import UserProfile from "../Components/UserProfile/UserProfile";
+import AboutUs from "../Components/AboutUs/AboutUs";
+import Login from "../Components/Login/Login";
+import UpdateProfile from "../Components/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
@@ -17,7 +19,7 @@ const router = createBrowserRouter([
         {
           path:'/',
           element: <Home></Home>,
-          loader: ()=> fetch('data.json')
+          loader: ()=> fetch('/data.json')
         },
         {
           path: '/industry/:id',
@@ -29,8 +31,16 @@ const router = createBrowserRouter([
           element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>
         },
         {
+          path: '/updateprofile',
+          element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
+        },
+        {
+          path:'/about',
+          element:<AboutUs></AboutUs>
+        },
+        {
           path:'/login',
-          element:<Login></Login>,
+          element:<Login></Login>
         },
         {
           path:'/register',

@@ -5,26 +5,30 @@ import User from '../../assets/images/user.png'
 
 const NavBar = () => {
 
-    const {user,logOut} = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
     // console.log(user);
     // const {photoURL,displayName} = user;
 
-    const handleLogOut = ()=>{
-        logOut()
-        .then(result=>{
-            console.log(result.user);
-        })
-        .catch(error=>console.log(error))
-    }
-
     const NavItems = <>
         <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/about'>About Us</NavLink></li>
         {
             user && <li><NavLink to='/userprofile'>UserProfile</NavLink></li>
+        }
+        {
+            user && <li><NavLink to='/updateprofile'>UpdateProfile</NavLink></li>
         }
         {/* <li><NavLink to='/login'>Login</NavLink></li> */}
         {/* <li><NavLink to='/register'>Register</NavLink></li> */}
     </>
+
+    const handleLogOut = () => {
+        logOut()
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => console.log(error))
+    }
     return (
         <div>
             <div className="navbar bg-base-100 mt-8">
@@ -46,20 +50,20 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-end space-x-5">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        {/* <div className="w-10 rounded-full mr-">
-                            <abbr title={displayName}><img alt="Tailwind CSS Navbar component" src={user ? photoURL : User} /></abbr>
-                        </div> */}
                         <div className="w-10 rounded-full mr-">
-                            <abbr title='sorkar saheb'><img alt="Tailwind CSS Navbar component" src={User} /></abbr>
+                            <abbr title={user?.displayName}><img alt="Tailwind CSS Navbar component" src={user ? user?.photoURL : User} /></abbr>
                         </div>
+                        {/* <div className="w-10 rounded-full mr-">
+                            <abbr title='sorkar saheb'><img alt="Tailwind CSS Navbar component" src={User} /></abbr>
+                        </div> */}
                     </div>
-                        {
-                            user ? 
+                    {
+                        user ?
                             <button onClick={handleLogOut} className="btn bg-green-500 text-white hover:bg-green-500 text-lg font-semibold">LogOut</button>
                             :
                             <Link to='/login' className="btn bg-green-500 text-white hover:bg-green-500 text-lg font-semibold">Login
                             </Link>
-                        }
+                    }
                 </div>
             </div>
         </div>
