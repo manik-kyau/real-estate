@@ -41,7 +41,7 @@ const NavBar = () => {
                             {NavItems}
                         </ul>
                     </div>
-                    <a className="text-3xl font-bold">FactoryNexus</a>
+                    <a className="text-3xl font-bold">Factory<span className="text-green-600">Nexus</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

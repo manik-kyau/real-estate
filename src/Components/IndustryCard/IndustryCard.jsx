@@ -4,11 +4,11 @@ const IndustryCard = ({data}) => {
     const {id,estate_title,segment_name,description,price,status,arealocation,facilities,image} = data;
     return (
         <div className='w-full'>
-            <div className="w-full rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
-                <img src={image} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
+            <div className="w-full rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 border">
+                <img src={image} alt="" className="object-cover h-[200px] object-center w-full rounded-t-md dark:bg-gray-500" />
                 <div className="flex flex-col justify-between p-6 space-y-8">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-semibold tracking-wide">{estate_title}</h2>
+                        <h2 className="text-2xl font-bold tracking-wide">{estate_title.slice(0,16)}</h2>
                         <p className="dark:text-gray-800">{description.slice(0,50)}</p>
                     </div>
                     <Link to={`/industry/${id}`}>

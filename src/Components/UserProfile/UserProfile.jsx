@@ -12,7 +12,7 @@ const UserProfile = () => {
             <Helmet>
                 <title>User Profile</title>
             </Helmet>
-            <h2 className="text-5xl font-bold text-center py-4 my-8 bg-gray-100 rounded-md">User Information</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4 my-8 bg-gray-100 rounded-md">User Information</h2>
             <div className="mb-12">
 
                 <div className="max-w-md h-[400px] p-2 sm:space-x-6 dark:bg-gray-50 dark:text-gray-800 border-2 mx-auto">
