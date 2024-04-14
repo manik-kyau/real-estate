@@ -12,10 +12,10 @@ const UserProfile = () => {
             <Helmet>
                 <title>User Profile</title>
             </Helmet>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4 my-8 bg-gray-100 rounded-md">User Information</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4 my-8 bg-gray-100 rounded-md" data-aos="zoom-in">User Information</h2>
             <div className="mb-12">
 
-                <div className="max-w-md h-[400px] p-2 sm:space-x-6 dark:bg-gray-50 dark:text-gray-800 border-2 mx-auto">
+                <div className="max-w-md h-[400px] p-2 sm:space-x-6 dark:bg-gray-50 dark:text-gray-800 border-2 rounded-xl mx-auto" data-aos="zoom-in">
                     <div className="w-full mb-6 h-44 sm:h-60 sm:mb-0">
                         <img src={photoURL} alt="" className="object-cover object-center w-full h-full rounded dark:bg-gray-500" />
                     </div>

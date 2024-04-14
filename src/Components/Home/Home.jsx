@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
 
 import { FreeMode, Pagination } from 'swiper/modules';
+import Team from "../Team/Team";
 // import { RxArrowTopRight } from 'react-icons/rx'
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
              data-aos="fade-right"
              data-aos-offset="300"
              data-aos-easing="ease-in-sine">
-                <h2 className="text-4xl font-bold"> Exploring the World of FactoryNexus</h2>
+                <h2 className="text-3xl md:text-4xl font-bold"> Exploring the World of FactoryNexus</h2>
                 <p className="w-full md:w-3/5 lg:w-4/5 text-base font-medium mx-auto">FactoryNexus is a cutting-edge platform designed to revolutionize manufacturing operations by seamlessly integrating various aspects of production, supply chain management, and data analytics. With its sophisticated technology infrastructure, FactoryNexus facilitates real-time monitoring and control of factory processes, optimizing efficiency and minimizing downtime.</p>
             </div>
             <div className="flex flex-col  lg:flex-row  mb-8"
@@ -68,6 +69,7 @@ const Home = () => {
                 } */}
             </div>
             <Gallery></Gallery>
+            <Team></Team>
         </div>
     );
 };

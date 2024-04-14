@@ -10,6 +10,7 @@ import AboutUs from "../Components/AboutUs/AboutUs";
 import Login from "../Components/Login/Login";
 import UpdateProfile from "../Components/UpdateProfile/UpdateProfile";
 import Gallery from "../Components/Gallery/Gallery";
+import Contact from "../Components/Contact/Contact";
 
 const router = createBrowserRouter([
     {
@@ -43,10 +44,14 @@ const router = createBrowserRouter([
           path:'/login',
           element:<Login></Login>
         },
-        // {
-        //   path:'/register',
-        //   element:<Register></Register>,
-        // },
+        {
+          path:'/register',
+          element:<Register></Register>
+        },
+        {
+          path:'/contact',
+          element:<Contact></Contact>
+        },
         {
           path: '/',
           element:<Gallery></Gallery>

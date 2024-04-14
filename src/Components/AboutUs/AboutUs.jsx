@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import Meating from '../../assets/images/gallery/meating.webp'
 
 const AboutUs = () => {
     return (
@@ -7,7 +8,37 @@ const AboutUs = () => {
                 <title>About Us</title>
             </Helmet>
             <div>
-                <section className="py-6 dark:bg-gray-100 dark:text-gray-800">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4 my-8 bg-gray-100 rounded-md"
+                 data-aos="fade-right"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine"
+                 >About Us</h2>
+                <div className="my-8 md:my-10 bg-gray-100 rounded-lg" 
+                 data-aos="fade-left"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
+                    <div className="hero-content flex-col gap-8 md:gap-10 lg:gap-14 lg:flex-row-reverse py-8 md:py-10 lg:py-14">
+                        <div className="lg:h-[400px]">
+                            <img src={Meating} className="max-w-full md:w-[990px] lg:max-w-md h-full rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">Welcome to our website</h1>
+                            <p className=" py-3 md:5 lg:py-6 text-justify text-base font-normal">Welcome to Factory Nexus, the driving force behind industrial innovation and efficiency. With a legacy spanning 20 years, we have been at the forefront of industrial evolution, catering to a diverse array of sectors worldwide.
+
+                                At Factory Nexus, we live and breathe industrial excellence. Our journey began with a simple yet powerful vision: to revolutionize the way industries operate by providing reliable, cutting-edge solutions that optimize processes, enhance productivity, and minimize environmental impact.
+
+                                What sets us apart is our unwavering commitment to quality, safety, and customer satisfaction. Every product and service we offer is a testament to our dedication to excellence and our relentless pursuit of perfection. From manufacturing and logistics to energy and infrastructure, we offer a comprehensive suite of solutions designed to meet the unique needs of each industry we serve.</p>
+                            <button className="btn bg-green-500 hover:bg-green-500 text-white text-lg font-semibold">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                {/* <section className="py-6 dark:bg-gray-100 dark:text-gray-800">
                     <div className="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
                         <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">Development team</p>
                         <h1 className="text-4xl font-bold leading-none text-center sm:text-5xl">The talented people behind the scenes</h1>
@@ -194,7 +225,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
             </div>
         </div>
     );
