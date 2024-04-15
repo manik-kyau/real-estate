@@ -1,28 +1,37 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 const UserProfile = () => {
 
     const { user } = useContext(AuthContext);
-    const { photoURL,displayName,email } = user;
+    const { photoURL, displayName, email,phoneNumber } = user;
     console.log(user);
     return (
-        <div>
+        <div className="w-full lg:w-[1180px] mx-auto">
             <Helmet>
                 <title>User Profile</title>
             </Helmet>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4 my-8 bg-gray-100 rounded-md" data-aos="zoom-in">User Information</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4 my-8 bg-gray-100 rounded-md"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+            >User Information</h2>
             <div className="mb-12">
 
-                <div className="max-w-md h-[400px] p-2 sm:space-x-6 dark:bg-gray-50 dark:text-gray-800 border-2 rounded-xl mx-auto" data-aos="zoom-in">
+                <div className="max-w-md  p-2 sm:space-x-6 dark:bg-gray-50 dark:text-gray-800 border-2 rounded-xl mx-auto"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500"
+                >
                     <div className="w-full mb-6 h-44 sm:h-60 sm:mb-0">
                         <img src={photoURL} alt="" className="object-cover object-center w-full h-full rounded dark:bg-gray-500" />
                     </div>
                     <div className="flex flex-col space-y-4">
                         <div className="mt-4">
                             <h2 className="text-2xl font-semibold">Name: {displayName}</h2>
-                            
+
                         </div>
                         <div className="space-y-1">
                             <span className="flex items-center space-x-2">
@@ -35,16 +44,17 @@ const UserProfile = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-label="Phonenumber" className="w-4 h-4">
                                     <path fill="currentColor" d="M449.366,89.648l-.685-.428L362.088,46.559,268.625,171.176l43,57.337a88.529,88.529,0,0,1-83.115,83.114l-57.336-43L46.558,362.088l42.306,85.869.356.725.429.684a25.085,25.085,0,0,0,21.393,11.857h22.344A327.836,327.836,0,0,0,461.222,133.386V111.041A25.084,25.084,0,0,0,449.366,89.648Zm-20.144,43.738c0,163.125-132.712,295.837-295.836,295.837h-18.08L87,371.76l84.18-63.135,46.867,35.149h5.333a120.535,120.535,0,0,0,120.4-120.4v-5.333l-35.149-46.866L371.759,87l57.463,28.311Z"></path>
                                 </svg>
-                                <span className="dark:text-gray-600">+25 381 77 983</span>
+                                <span className="dark:text-gray-600">{phoneNumber}</span>
+                                {/* <span className="dark:text-gray-600 block">+25 381 77 983</span> */}
                             </span>
+                            <div className="text-end">
+                                <Link to='/updateprofile'>
+                                    <button className="btn bg-[#23BE0A] text-base text-white font-semibold">Update Profile</button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                {/* <h2>Name: {user.displayName}</h2>
-                <h2>Email: {user.email}</h2>
-                <h2>Photo Url: {user.photoURL}</h2>
-                <img className="w-[200px] h-[200px]" src={photoURL} alt="" /> */}
             </div>
         </div>
     );

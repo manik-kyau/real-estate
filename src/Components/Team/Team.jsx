@@ -6,7 +6,7 @@ import Himel from '../../assets/images/gallery/himel.jpg'
 import Farhad from '../../assets/images/gallery/farhad.jpg'
 const Team = () => {
     return (
-        <div>
+        <div className="w-full lg:w-[1180px] mx-auto">
             <section className="py-6 dark:bg-gray-100 dark:text-gray-800">
                 <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
                     <div data-aos="flip-left"

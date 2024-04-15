@@ -1,9 +1,8 @@
 import { Helmet } from "react-helmet-async";
-import { CiLineHeight } from "react-icons/ci";
 
 const Contact = () => {
     return (
-        <div>
+        <div className="w-full lg:w-[1180px] mx-auto">
             <Helmet>
                 <title>Contuct Us</title>
             </Helmet>

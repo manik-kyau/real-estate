@@ -10,9 +10,6 @@ import { toast } from 'react-toastify';
 
 const Login = () => {
 
-    const [loginError, setLoginError] = useState('');
-    const [errorEmail, setErrorEmail] = useState('')
-    const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
     const { user, auth, signIn } = useContext(AuthContext);
@@ -63,14 +60,6 @@ const Login = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        // reaet error 
-        setLoginError('');
-
-        // if (user.email !== email) {
-        //     setErrorEmail('Your email is invalid');
-        //     return;
-        // }
-
         signIn(email, password)
             .then(result => {
                 console.log(result.user);
@@ -80,17 +69,13 @@ const Login = () => {
                 toast.success('Login successfully done..');
             })
             .catch(error => {
-                {
-                    console.log(error);
-                    if (user.email !== email) {
-                            // setErrorEmail('Your email is invalid');
-                            toast.error('Invaild Email');
-                            return;
-                        }
-                    // setLoginError('Please Enter a valid Password.')
-                    toast.error(error.message);
-                    
+                console.log(error);
+                if (user.email !== email) {
+                    toast.error('Invaild Email');
+                    return
                 }
+                toast.error('Please Enter a valid Password.');   
+                
             })
     }
     return (
@@ -128,9 +113,6 @@ const Login = () => {
                             <div className="space-y-2">
                                 <label className="block text-lg font-semibold">Email address</label>
                                 <input type="email" name="email" placeholder="Enter Email Address:" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
-                                {
-                                    errorEmail && <p className="font-semibold text-red-600">{errorEmail}</p>
-                                }
                             </div>
                             <div className="space-y-2">
                                 <div className="flex justify-between">
@@ -145,12 +127,9 @@ const Login = () => {
                                         }
                                     </span>
                                 </div>
-                                {
-                                    loginError && <p className="font-semibold text-red-600">{loginError}</p>
-                                }
                             </div>
                         </div>
-                        <input type="submit" value='Login' className="w-full font-medium px-3 py-2 border rounded-md dark:border-gray-300 focus:dark:border-violet-600 bg-green-500 text-white text-lg cursor-pointer" />
+                        <input type="submit" value='Login' className="w-full font-medium px-3 py-2 border rounded-md dark:border-gray-300 focus:dark:border-violet-600 bg-[#23BE0A] text-white text-lg cursor-pointer" />
                     </form>
                 </div>
             </div>

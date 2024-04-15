@@ -9,13 +9,11 @@ import { FaEyeSlash } from "react-icons/fa";
 import { toast } from 'react-toastify';
 
 const Register = () => {
-
+    
     const [registerError, setRegisterError] = useState('');
-    const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-    const { createUser } = useContext(AuthContext);
+    const { createUser,logOut } = useContext(AuthContext);
     const location = useLocation();
-    // console.log(location);
     const navigate = useNavigate();
 
     const handleRegistrationForm = e => {
@@ -41,26 +39,37 @@ const Register = () => {
             setRegisterError('Your password should have at least one uppercase and some lowercase latter.');
             return;
         }
+        else if(name.length < 1){
+            toast.error('enterYour Name');
+            return;
+        }
+        else if(email.length < 1){
+            toast.error('Enter Your Email Address');
+            return;
+        }
+        else if(photo.length < 1){
+            toast.error('Enter Your photo Link');
+            return;
+        }
 
         createUser(email, password)
-            .then(result => {
-                console.log(result.user);
-
-                navigate(location?.state ? location.state : '/login');
-                // Update Profile
-                updateProfile(result.user, {
-                    displayName: name,
-                    photoURL: photo
-                })
-                    .then(() => console.log('profile updated'))
-                    .catch(error => console.log(error))
-                    toast.success("User Create uccessfully.");
+        .then(result => {
+            console.log(result.user);
+            logOut()
+            navigate(location?.state ? location.state : '/login');
+            // Update Profile
+            updateProfile(result.user, {
+                displayName: name,
+                photoURL: photo
             })
-            .catch(error => {
-                // setRegisterError(error.message);
-                console.log(error.message);
-                toast.error('User already Created.');
-            })
+            .then(() => console.log('profile updated'))
+            .catch(error => console.log(error))
+            toast.success("Registration Successfully Done.");
+        })
+        .catch(error => {
+            console.log(error.message);
+            toast.error('User already Created.');
+        })
     }
 
     return (
@@ -73,22 +82,22 @@ const Register = () => {
                     <h2 className="w-full text-3xl font-bold leading-tight">Registration Now</h2>
                     <div>
                         <label className="block text-lg font-semibold">Name</label>
-                        <input type="text" name='name' placeholder="Your name" required className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
+                        <input type="text" name='name' placeholder="Your name" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
                     </div>
                     <div>
                         <label className="block text-lg font-semibold">Email</label>
-                        <input type="email" name='email' placeholder="Your email" required className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
+                        <input type="email" name='email' placeholder="Your email" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
                     </div>
                     <div>
                         <label className="block text-lg font-semibold">PhotoURL</label>
-                        <input type="text" name='photo' placeholder="Your email" required className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
+                        <input type="text" name='photo' placeholder="Your email" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
                     </div>
                     <div>
                         <label className="block text-lg font-semibold">Password</label>
                         <div className="relative">
                             <input type={showPassword ? "text" : "password"}
                                 name='password'
-                                placeholder="Your Password" required
+                                placeholder="Your Password"
                                 className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
                             <span onClick={() => setShowPassword(!showPassword)} className="absolute bottom-[10px] right-4 cursor-pointer text-2xl">
                                 {
@@ -102,7 +111,7 @@ const Register = () => {
                     </div>
 
                     <div>
-                        <input type="submit" value='Register' className="block w-full p-2 rounded cursor-pointer bg-green-500 text-lg text-white font-semibold" />
+                        <input type="submit" value='Register' className="block w-full p-2 rounded cursor-pointer bg-[#23BE0A] text-lg text-white font-semibold" />
                     </div>
                     <p className="text-base dark:text-gray-600">Already have an account? Please <Link to='/login' className="focus:underline hover:underline font-bold ml-1">Log In</Link></p>
 

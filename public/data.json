@@ -44,7 +44,7 @@
       "status": "sale",
       "area": "100,000 sqft",
       "location": "Los Angeles, California",
-      "facilities": ["refrigeration systems", "temperature-controlled"],
+      "facilities": ["refrigeration", "temperature"],
       "image": "https://i.ibb.co/sFpz0hQ/5.jpg"
     },
     {
