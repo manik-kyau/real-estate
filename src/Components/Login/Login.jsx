@@ -28,6 +28,7 @@ const Login = () => {
 
                 // Navigate after login
                 navigate(location?.state ? location.state : '/');
+                toast.success('Login successfully done..');
 
             })
             .catch(error => {
@@ -46,6 +47,7 @@ const Login = () => {
 
                 // Navigate after login
                 navigate(location?.state ? location.state : '/');
+                toast.success('Login successfully done..');
 
             })
             .catch(error => {
@@ -69,17 +71,18 @@ const Login = () => {
                 toast.success('Login successfully done..');
             })
             .catch(error => {
-                console.log(error);
-                if (user.email !== email) {
-                    toast.error('Invaild Email');
-                    return
-                }
-                toast.error('Please Enter a valid Password.');   
+                const errorCode = error.code;
                 
+                const errorMessage = error.message;
+                if (errorCode) {
+                    toast.error('Invalid email or password')
+                    return;
+                    }
+                console.log('Error during login:', errorMessage);
             })
     }
     return (
-        <>
+        <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <Helmet>
                 <title>Login</title>
             </Helmet>
@@ -121,11 +124,13 @@ const Login = () => {
                                 </div>
                                 <div className="relative">
                                     <input type={showPassword ? "text" : "password"} name="password" placeholder="Enter Password" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
+
                                     <span onClick={() => setShowPassword(!showPassword)} className="absolute bottom-[10px] right-4 cursor-pointer text-2xl">
                                         {
                                             showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
                                         }
                                     </span>
+
                                 </div>
                             </div>
                         </div>
@@ -133,7 +138,7 @@ const Login = () => {
                     </form>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

@@ -25,7 +25,7 @@ const Home = () => {
             </Helmet>
 
             <Banner></Banner>
-            <div className='w-full lg:w-[1280px] mx-auto'>
+            <div className='w-full lg:w-[1280px] mx-auto px-5 lg:px-0'>
                 <div className="text-center my-8 space-y-4 "
                     data-aos="fade-right"
                     data-aos-offset="300"

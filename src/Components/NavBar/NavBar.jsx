@@ -6,8 +6,6 @@ import User from '../../assets/images/user.png'
 const NavBar = () => {
 
     const { user, logOut } = useContext(AuthContext);
-    // console.log(user);
-    // const {photoURL,displayName} = user;
 
     const NavItems = <>
         <li><NavLink to='/'
@@ -26,10 +24,11 @@ const NavBar = () => {
                 className={({ isActive }) => isActive ? "text-[#23BE0A] font-bold text-lg bg-white WorkSans hover:text-white" : "text-lg font-bold WorkSans text-[#131313cc] hover:text-white hover:bg-[#23BE0A]"}
             >UpdateProfile</NavLink></li>
         }
-        <li><NavLink to='/contact'
-            className={({ isActive }) => isActive ? "text-[#23BE0A] font-bold text-lg bg-white WorkSans hover:text-white" : "text-lg font-bold WorkSans text-[#131313cc] hover:text-white hover:bg-[#23BE0A]"}
-        >Contact</NavLink></li>
-        {/* <li><NavLink to='/register'>Register</NavLink></li> */}
+        {
+            user && <li><NavLink to='/contact'
+                className={({ isActive }) => isActive ? "text-[#23BE0A] font-bold text-lg bg-white WorkSans hover:text-white" : "text-lg font-bold WorkSans text-[#131313cc] hover:text-white hover:bg-[#23BE0A]"}
+            >Contact</NavLink></li>
+        }
     </>
 
     const handleLogOut = () => {
@@ -40,7 +39,7 @@ const NavBar = () => {
             .catch(error => console.log(error))
     }
     return (
-        <div className="w-full lg:w-[1180px] mx-auto">
+        <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <div className="navbar bg-base-100 mt-8 px-0">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -60,12 +59,9 @@ const NavBar = () => {
                 </div>
                 <div className="navbar-end space-x-5">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full mr-">
-                                <abbr title={user?.displayName}><img alt="Tailwind CSS Navbar component" src={user ? user?.photoURL : User} /></abbr>
-                            </div>
-                        {/* <div className="w-10 rounded-full mr-">
-                            <abbr title='sorkar saheb'><img alt="Tailwind CSS Navbar component" src={User} /></abbr>
-                        </div> */}
+                        <div className="w-10 rounded-full mr-">
+                            <abbr title={user?.displayName}><img alt="Tailwind CSS Navbar component" src={user ? user?.photoURL : User} /></abbr>
+                        </div>
                     </div>
                     {
                         user ?

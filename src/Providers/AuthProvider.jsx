@@ -10,7 +10,6 @@ const AuthProvider = ({ children }) => {
 
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
-    // console.log('ami ki parbo: ',user);
 
     const createUser = (email, password) => {
         setLoading(true);
@@ -27,23 +26,22 @@ const AuthProvider = ({ children }) => {
         return signOut(auth);
     }
     // Update user Profile
-    const updateUserProfile = (name, phone, photo) => {
-            console.log(user);
-            updateProfile(auth.user, {
-                displayName: name,
-                phoneNumber: phone,
-                photoURL: photo
-            })
-            .then(() => console.log('ami kano connect korte partesi na'))
-            .catch(error => {
-                console.log(error.message)
-            })
-            // console.log(name,photo,phone)
-    }
+    // const updateUserProfile = (name, phone, photo) => {
+    //         console.log(name, phone, photo);
+    //         updateProfile(auth.user, {
+    //             displayName: name,
+    //             phoneNumber: phone,
+    //             photoURL: photo
+    //         })
+    //         .then(() => console.log('ami kano connect korte partesi na'))
+    //         .catch(error => {
+    //             console.log("Hassokor",error.message)
+    //         })
+    //         // console.log(name,photo,phone)
+    // }
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
-            // console.log('user in the auth state change',currentUser);
             setUser(currentUser);
             setLoading(false);
         })
@@ -53,7 +51,7 @@ const AuthProvider = ({ children }) => {
     }, [])
 
     const authInfo = {
-        user, auth, loading, createUser, logOut, signIn, updateUserProfile
+        user, auth, loading, createUser, logOut, signIn
     }
     return (
         <AuthContext.Provider value={authInfo}>

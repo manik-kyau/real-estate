@@ -4,7 +4,7 @@ import Banner3 from '../../assets/images/banner3.jpg';
 
 const Banner = () => {
     return (
-        <div className='w-full lg:w-[1180px] mx-auto'>
+        <div className='w-full lg:w-[1280px] mx-auto px-5 lg:px-0'>
             <div className="carousel w-full my-8">
                 <div id="slide1" className="carousel-item relative w-full">
                     <div className='w-full relative rounded-3xl'>
@@ -39,7 +39,7 @@ const Banner = () => {
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
                     <div className='w-full relative'>
-                        <img src={Banner2} className="w-full h-[550px] rounded-3xl" />
+                        <img src={Banner2} className="w-full h-[700px] md:h-[600px] rounded-3xl" />
                         {/* hero */}
                         <section className="absolute bottom-0 w-full h-full dark:bg-gray-100 dark:text-gray-800 bg-black bg-opacity-50 rounded-3xl">
                             <div className="mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">
@@ -69,7 +69,7 @@ const Banner = () => {
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
                     <div className='w-full relative'>
-                        <img src={Banner3} className="w-full h-[550px] rounded-3xl" />
+                        <img src={Banner3} className="w-full h-[700px] md:h-[600px] rounded-3xl" />
                         {/* hero */}
                         <section className="absolute bottom-0 w-full h-full dark:bg-gray-100 dark:text-gray-800 bg-black bg-opacity-50 rounded-3xl">
                             <div className="mx-auto flex flex-col items-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32">

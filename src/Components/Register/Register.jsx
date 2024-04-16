@@ -73,12 +73,12 @@ const Register = () => {
     }
 
     return (
-        <div className="">
+        <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <Helmet>
                 <title>Register</title>
             </Helmet>
             <section className="p-6 dark:text-gray-800">
-                <form onSubmit={handleRegistrationForm} className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-md shadow-2xl dark:bg-gray-50 border border-red-600">
+                <form onSubmit={handleRegistrationForm} className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-xl border-2 dark:bg-gray-50 ">
                     <h2 className="w-full text-3xl font-bold leading-tight">Registration Now</h2>
                     <div>
                         <label className="block text-lg font-semibold">Name</label>
@@ -106,7 +106,7 @@ const Register = () => {
                             </span>
                         </div>
                         {
-                            registerError && <p className="font-semibold text-red-600">{registerError}</p>
+                            registerError && <p className="text-red-600 font-semibold text-base">{registerError}</p>
                         }
                     </div>
 

@@ -6,47 +6,50 @@ import Himel from '../../assets/images/gallery/himel.jpg'
 import Farhad from '../../assets/images/gallery/farhad.jpg'
 const Team = () => {
     return (
-        <div className="w-full lg:w-[1180px] mx-auto">
-            <section className="py-6 dark:bg-gray-100 dark:text-gray-800">
+        <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
+            <section className="dark:bg-gray-100 dark:text-gray-800 lg:w-[1180px] mx-auto">
                 <div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
-                    <div data-aos="flip-left"
+                    <div
+                        data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000">
+                        data-aos-duration="2000"
+                    >
                         <h1 className="text-4xl font-bold leading-none text-center sm:text-5xl">Our team</h1>
                         <p className="max-w-2xl text-center dark:text-gray-600">At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!</p>
                     </div>
-                    <div className="flex flex-row flex-wrap-reverse justify-center"
+                    <div
                         data-aos="flip-right"
                         data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000">
+                        data-aos-duration="2000"
+                        className="flex flex-row flex-wrap-reverse justify-center">
                         <div className="flex flex-col justify-center m-8 text-center">
                             <img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={Farhad} />
-                            <p className="text-xl font-semibold leading-tight">Farhad Reza</p>
+                            <p className="text-xl font-semibold leading-tight">Farhad Ahmed</p>
                             <p className="dark:text-gray-600">Web Engineer</p>
                         </div>
                         <div className="flex flex-col justify-center m-8 text-center">
                             <img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={Himel} />
-                            <p className="text-xl font-semibold leading-tight">Himel Rana</p>
+                            <p className="text-xl font-semibold leading-tight"> Himel Rana</p>
                             <p className="dark:text-gray-600">Web Developer</p>
                         </div>
                         <div className="flex flex-col justify-center m-8 text-center">
                             <img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={Leory} />
-                            <p className="text-xl font-semibold leading-tight">Leroy Jenkins</p>
+                            <p className="text-xl font-semibold leading-tight">Leroy Jenkin</p>
                             <p className="dark:text-gray-600">Visual Designer</p>
                         </div>
                         <div className="flex flex-col justify-center m-8 text-center">
                             <img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={Angelina} />
-                            <p className="text-xl font-semibold leading-tight">Angelina Malaila</p>
+                            <p className="text-xl font-semibold leading-tight">Angel Malaila</p>
                             <p className="dark:text-gray-600">Web Designer</p>
                         </div>
                         <div className="flex flex-col justify-center m-8 text-center">
                             <img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={Jaki} />
-                            <p className="text-xl font-semibold leading-tight">Jaky Lawra</p>
+                            <p className="text-xl font-semibold leading-tight">Khusbu Manju</p>
                             <p className="dark:text-gray-600">Visual Designer</p>
                         </div>
                         <div className="flex flex-col justify-center m-8 text-center">
                             <img alt="" className="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={Manik} />
-                            <p className="text-xl font-semibold leading-tight">Md. Manik Sarkar</p>
+                            <p className="text-xl font-semibold leading-tight"> Manik Sarkar</p>
                             <p className="dark:text-gray-600">Web Designer</p>
                         </div>
                     </div>

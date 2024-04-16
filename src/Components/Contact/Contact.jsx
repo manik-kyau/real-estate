@@ -2,11 +2,11 @@ import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
     return (
-        <div className="w-full lg:w-[1180px] mx-auto">
+        <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <Helmet>
                 <title>Contuct Us</title>
             </Helmet>
-             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-6 mt-8 bg-gray-100 rounded-md" data-aos="zoom-in">Contact Us</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-6 mt-8 bg-gray-100 rounded-md" data-aos="zoom-in">Contact Us</h2>
             <section className="py-6 md:py-10 lg:py-14 dark:bg-gray-100 dark:text-gray-900 bg-gray-100 my-8 md:my-10 lg:my-14 rounded-xl"
                 data-aos="fade-up"
                 data-aos-duration="2000">

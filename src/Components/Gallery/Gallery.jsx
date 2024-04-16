@@ -11,7 +11,7 @@ import G10 from '../../assets/images/gallery/g10.jpg';
 
 const Gallery = () => {
     return (
-        <div className="w-full lg:w-[1180px] mx-auto">
+        <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <div className='my-8 md:my-12'>
                 <div className='mb-8 space-y-4 text-center' data-aos="fade-down">
                     <h2 className='text-3xl md:text-4xl font-bold text-center'>Photo Gallery</h2>
