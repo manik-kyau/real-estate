@@ -11,8 +11,8 @@ const IndustryCard = ({ data }) => {
                 <img src={image} alt="" className="object-cover h-[200px] object-center w-full rounded-md dark:bg-gray-500" />
                 <div className="flex flex-col justify-between pt-6 pb-4 space-y-8">
                     <div className="space-y-2">
-                        <h2 className="text-2xl font-bold tracking-wide">{estate_title.slice(0, 16)}</h2>
-                        <p className="dark:text-gray-800 text-base font-normal">{description.slice(0, 187)}</p>
+                        <h2 className="text-2xl font-bold tracking-wide text-[#131313]">{estate_title.slice(0, 16)}</h2>
+                        <p className="dark:text-gray-800 text-base font-normal text-[#686767]">{description.slice(0, 187)}</p>
                         <div className='flex gap-7 pt-4'>
                             <h2 className='space-x-1'>
                                 <span className="text-base font-bold">Price: </span>

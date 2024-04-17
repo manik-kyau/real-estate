@@ -14,8 +14,8 @@ const Team = () => {
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000"
                     >
-                        <h1 className="text-4xl font-bold leading-none text-center sm:text-5xl">Our team</h1>
-                        <p className="max-w-2xl text-center dark:text-gray-600">At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!</p>
+                        <h1 className="text-4xl font-bold leading-none text-center sm:text-5xl text-[#131313]">Our team</h1>
+                        <p className="max-w-2xl text-center dark:text-gray-600 mt-3 text-[#686767]">Welcome to the heart of our organization—the talented individuals who drive our mission forward. Meet the diverse and dedicated team behind "Factory Nexus", each bringing a unique set of skills, experiences, and passions to the table.</p>
                     </div>
                     <div
                         data-aos="flip-right"

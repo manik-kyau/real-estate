@@ -24,5 +24,5 @@ The following feature are alailable in FactoryNexus Project:
 - [Tailwind CSS](https://tailwindcss.com/),
 - [React-Helmet](https://www.npmjs.com/package/react-helmet-async),
 - [React-Toastify](https://www.npmjs.com/package/react-toastify),
-- [React Icons](https://react-icons.github.io/react-icons/),
+- [React Icons](https://react-icons.github.io/react-icons/)
 

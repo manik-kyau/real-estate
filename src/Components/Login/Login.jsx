@@ -90,7 +90,7 @@ const Login = () => {
                 <div className="w-full max-w-md p-4 rounded-md shadow-2xl sm:p-8 dark:bg-gray-50 dark:text-gray-800 my-8 lg:my-12">
                     <h2 className="mb-3 text-3xl lg:text-4xl font-semibold text-center">Login to your account</h2>
                     <p className="text-base text-center dark:text-gray-600">Don't have account?
-                        <Link to='/register' rel="noopener noreferrer" className="focus:underline hover:underline font-bold ml-1">Register here</Link>
+                        <Link to='/register' rel="noopener noreferrer" className="focus:underline hover:underline font-bold ml-1 text-[#23BE0A]">Register here</Link>
                     </p>
                     <div className="my-6 space-y-4">
                         <button onClick={handleGooglesignIn} aria-label="Login with Google" type="button" className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-600 focus:dark:ring-violet-600">

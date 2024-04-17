@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { updateProfile } from "firebase/auth";
 import { Helmet } from "react-helmet-async";
-import { useLocation, useNavigate } from "react-router-dom";
+// import { useLocation, useNavigate } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import { toast } from 'react-toastify';
@@ -13,8 +13,8 @@ const Register = () => {
     const [registerError, setRegisterError] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const { createUser,logOut } = useContext(AuthContext);
-    const location = useLocation();
-    const navigate = useNavigate();
+    // const location = useLocation();
+    // const navigate = useNavigate();
 
     const handleRegistrationForm = e => {
         e.preventDefault();
@@ -56,7 +56,7 @@ const Register = () => {
         .then(result => {
             console.log(result.user);
             logOut()
-            navigate(location?.state ? location.state : '/login');
+            // navigate(location?.state ? location.state : '/login');
             // Update Profile
             updateProfile(result.user, {
                 displayName: name,
@@ -113,7 +113,7 @@ const Register = () => {
                     <div>
                         <input type="submit" value='Register' className="block w-full p-2 rounded cursor-pointer bg-[#23BE0A] text-lg text-white font-semibold" />
                     </div>
-                    <p className="text-base dark:text-gray-600">Already have an account? Please <Link to='/login' className="focus:underline hover:underline font-bold ml-1">Log In</Link></p>
+                    <p className="text-base dark:text-gray-600">Already have an account? Please <Link to='/login' className="focus:underline hover:underline font-bold ml-1 text-[#23BE0A]">Log In</Link></p>
 
                 </form>
             </section>

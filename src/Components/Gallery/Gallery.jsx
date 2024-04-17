@@ -14,8 +14,8 @@ const Gallery = () => {
         <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <div className='my-8 md:my-12'>
                 <div className='mb-8 space-y-4 text-center' data-aos="fade-down">
-                    <h2 className='text-3xl md:text-4xl font-bold text-center'>Photo Gallery</h2>
-                    <p className="w-full md:w-3/5 lg:w-4/5 text-base font-medium mx-auto">Industrial galleries may also host exhibitions, events, and workshops aimed at engaging audiences with the themes and concepts explored in the artwork. Additionally, they may serve as venues for discussions on topics such as sustainability, urban development, and the future of industry.</p>
+                    <h2 className='text-3xl md:text-4xl font-bold text-center text-[#131313]'>Photo Gallery</h2>
+                    <p className="w-full md:w-3/5 lg:w-4/5 text-base font-medium mx-auto text-[#686767]">Industrial galleries may also host exhibitions, events, and workshops aimed at engaging audiences with the themes and concepts explored in the artwork. Additionally, they may serve as venues for discussions on topics such as sustainability, urban development, and the future of industry.</p>
                 </div>
                 <section className=" dark:bg-gray-100 dark:text-gray-900">
                     <div className=" grid grid-cols-2 gap-4 mx-auto md:grid-cols-4"

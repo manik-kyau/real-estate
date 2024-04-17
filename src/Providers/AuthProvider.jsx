@@ -26,20 +26,12 @@ const AuthProvider = ({ children }) => {
         return signOut(auth);
     }
     // Update user Profile
-    // const updateUserProfile = (name, phone, photo) => {
-    //         console.log(name, phone, photo);
-    //         updateProfile(auth.user, {
-    //             displayName: name,
-    //             phoneNumber: phone,
-    //             photoURL: photo
-    //         })
-    //         .then(() => console.log('ami kano connect korte partesi na'))
-    //         .catch(error => {
-    //             console.log("Hassokor",error.message)
-    //         })
-    //         // console.log(name,photo,phone)
-    // }
-
+    const updateUserProfile = (name, photo) => {
+        return updateProfile(auth.currentUser,{
+            displayName: name,
+            photoURL: photo,
+        })
+    }
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
@@ -51,7 +43,7 @@ const AuthProvider = ({ children }) => {
     }, [])
 
     const authInfo = {
-        user, auth, loading, createUser, logOut, signIn
+        user, auth, loading, createUser, logOut, signIn,updateUserProfile
     }
     return (
         <AuthContext.Provider value={authInfo}>
