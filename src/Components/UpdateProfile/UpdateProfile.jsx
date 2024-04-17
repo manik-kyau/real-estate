@@ -4,13 +4,9 @@ import { AuthContext } from "../../Providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 
-
 const UpdateProfile = () => {
     const { user,updateUserProfile } = useContext(AuthContext);
     const navigate = useNavigate();
-
-    const { displayName, photoURL
-    } = user;
 
     const handleUpdateProfile = e => {
         e.preventDefault();
@@ -32,7 +28,7 @@ const UpdateProfile = () => {
     return (
         <div className="">
             <Helmet>
-                <title>Update Profile</title>
+                <title>FactoryNexus | Update Profile</title>
             </Helmet>
             <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0 mt-5 lg:gap-14"
                 data-aos="fade-zoom-in"
@@ -58,7 +54,7 @@ const UpdateProfile = () => {
                                 type='text'
                                 name='name'
                                 placeholder={user?.displayName}
-                                required=""
+                                required
                                 className="block border-2 w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100" />
                         </div>
                         <div>
@@ -66,7 +62,7 @@ const UpdateProfile = () => {
                                 type="text"
                                 name="photo"
                                 placeholder={user?.photoURL}
-                                required=""
+                                required
                                 className="block w-full p-2 rounded focus:outline-none focus:ring border-2 focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100" />
                         </div>
                         <div className="flex">

@@ -13,7 +13,7 @@ const IndustryDetails = () => {
     return (
         <>
             <Helmet>
-                <title>Industry Details {id}</title>
+                <title>FactoryNexus | Industry Details {id}</title>
             </Helmet>
             <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
                 <div >

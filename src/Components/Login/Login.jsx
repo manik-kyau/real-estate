@@ -12,7 +12,7 @@ const Login = () => {
 
     const [showPassword, setShowPassword] = useState(false);
 
-    const { user, auth, signIn } = useContext(AuthContext);
+    const { auth, signIn } = useContext(AuthContext);
     const location = useLocation();
     // console.log(location);
     const navigate = useNavigate();
@@ -84,9 +84,9 @@ const Login = () => {
     return (
         <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <Helmet>
-                <title>Login</title>
+                <title>FactoryNexus | Login</title>
             </Helmet>
-            <div className="flex justify-center">
+            <div className="flex justify-center" data-aos="zoom-in">
                 <div className="w-full max-w-md p-4 rounded-md shadow-2xl sm:p-8 dark:bg-gray-50 dark:text-gray-800 my-8 lg:my-12">
                     <h2 className="mb-3 text-3xl lg:text-4xl font-semibold text-center">Login to your account</h2>
                     <p className="text-base text-center dark:text-gray-600">Don't have account?

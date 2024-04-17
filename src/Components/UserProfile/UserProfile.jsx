@@ -11,7 +11,7 @@ const UserProfile = () => {
     return (
         <div className="w-full lg:w-[1180px] mx-auto">
             <Helmet>
-                <title>User Profile</title>
+                <title>FactoryNexus | User Profile</title>
             </Helmet>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center py-4 my-8 bg-gray-100 rounded-md text-[#131313]"
                 data-aos="fade-down"
