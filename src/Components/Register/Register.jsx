@@ -90,7 +90,7 @@ const Register = () => {
                     </div>
                     <div>
                         <label className="block text-lg font-semibold">PhotoURL</label>
-                        <input type="text" name='photo' placeholder="Your email" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
+                        <input type="text" name='photo' placeholder="Your photo" className="block w-full p-2 rounded focus:outline-none focus:ring focus:ring-opacity-25 focus:dark:ring-violet-600 dark:bg-gray-100 border" />
                     </div>
                     <div>
                         <label className="block text-lg font-semibold">Password</label>
