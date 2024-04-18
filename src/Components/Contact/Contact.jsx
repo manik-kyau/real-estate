@@ -50,7 +50,7 @@ const Contact = () => {
                             <span className="mb-1 text-[#424242]">Message</span>
                             <textarea rows="3" placeholder="Enter Your Message" className="block outline-none py-3 px-4 w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
                         </label>
-                        <button type="button" className="self-center px-8 py-3 text-lg font-semibold rounded focus:ring hover:ring focus:ring-opacity-75 bg-green-500 hover:bg-green-500 w-full text-white">Submit</button>
+                        <button type="button" className="self-center px-8 py-3 text-lg font-semibold rounded focus:ring hover:ring focus:ring-opacity-75 bg-[#23BE0A] hover:bg-[#23BE0A] w-full text-white">Submit</button>
                     </form>
                 </div>
             </section>
