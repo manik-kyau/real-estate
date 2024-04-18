@@ -75,7 +75,7 @@ const Register = () => {
     return (
         <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <Helmet>
-                <title>FactoryNexus | Register</title>
+                <title>Register</title>
             </Helmet>
             <section className="p-6 dark:text-gray-800" data-aos="flip-down">
                 <form onSubmit={handleRegistrationForm} className="container w-full max-w-xl p-8 mx-auto space-y-6 rounded-xl border-2 dark:bg-gray-50 ">

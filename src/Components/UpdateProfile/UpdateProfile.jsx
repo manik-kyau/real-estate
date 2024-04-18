@@ -28,7 +28,7 @@ const UpdateProfile = () => {
     return (
         <div className="">
             <Helmet>
-                <title>FactoryNexus | Update Profile</title>
+                <title>Update Profile</title>
             </Helmet>
             <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0 mt-5 lg:gap-14"
                 data-aos="fade-zoom-in"

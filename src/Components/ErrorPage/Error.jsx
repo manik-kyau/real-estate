@@ -5,7 +5,7 @@ const Error = () => {
     return (
         <div>
             <Helmet>
-                <title>FactoryNexus | Error</title>
+                <title>Error</title>
             </Helmet>
             <section className="flex items-center h-full p-16 dark:bg-gray-50 dark:text-gray-800">
                 <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">

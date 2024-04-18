@@ -84,7 +84,7 @@ const Login = () => {
     return (
         <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <Helmet>
-                <title>FactoryNexus | Login</title>
+                <title>Login</title>
             </Helmet>
             <div className="flex justify-center" data-aos="zoom-in">
                 <div className="w-full max-w-md p-4 rounded-md shadow-2xl sm:p-8 dark:bg-gray-50 dark:text-gray-800 my-8 lg:my-12">

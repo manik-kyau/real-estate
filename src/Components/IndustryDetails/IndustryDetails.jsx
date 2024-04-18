@@ -13,7 +13,7 @@ const IndustryDetails = () => {
     return (
         <>
             <Helmet>
-                <title>FactoryNexus | Industry Details {id}</title>
+                <title>Industry Details {id}</title>
             </Helmet>
             <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
                 <div >
@@ -62,8 +62,11 @@ const IndustryDetails = () => {
                                     <div className="flex gap-2 lg:gap-5">
                                         <span className="text-base font-bold">Facilities:</span>
                                         {
-                                            facilities.map((facility, idx) => <p className="text-base font-semibold bg-[#23BE0A] text-white px-2 md:px-5 rounded-[50px] " key={idx}>{facility}</p>)
+                                            facilities.map((facility, idx) => <p className="text-base font-semibold  text-white bg-[#23BE0A] px-2 md:px-5 rounded-[50px] " key={idx}>{facility}</p>)
                                         }
+                                    </div>
+                                    <div className="pt-4">
+                                        <button className=" px-8 rounded-3xl py-2 bg-[#23BE0A] text-white hover:bg-[#23BE0A] text-lg font-semibold">Reserve</button>
                                     </div>
                                 </div>
                             </div>
