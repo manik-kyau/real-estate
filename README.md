@@ -15,15 +15,8 @@ The following feature are alailable in FactoryNexus Project:
 https://real-estate-9d882.web.app
 
 
-### Use Packages
-- [React Router](https://reactrouter.com/en/main/start/tutorial),
+### UseD Packages for the challenges task.
 - [AOS Package](https://www.npmjs.com/package/aos),
 - [React-leaflet](https://react-leaflet.js.org/),
 - [Swiper slider](https://swiperjs.com/),
-- [Daisy UI](https://daisyui.com/docs/cdn/),
-- [Firebase Authentication](https://firebase.google.com/),
-- [Tailwind CSS](https://tailwindcss.com/),
-- [React-Helmet](https://www.npmjs.com/package/react-helmet-async),
-- [React-Toastify](https://www.npmjs.com/package/react-toastify),
-- [React Icons](https://react-icons.github.io/react-icons/)
 
