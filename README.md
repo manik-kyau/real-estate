@@ -15,7 +15,7 @@ The following feature are alailable in FactoryNexus Project:
 https://real-estate-9d882.web.app
 
 
-### UseD Packages for the challenges task.
+### Used Packages for the challenges task.
 - [AOS Package](https://www.npmjs.com/package/aos),
 - [React-leaflet](https://react-leaflet.js.org/),
 - [Swiper slider](https://swiperjs.com/),
