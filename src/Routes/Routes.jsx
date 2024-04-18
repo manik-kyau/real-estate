@@ -9,7 +9,6 @@ import UserProfile from "../Components/UserProfile/UserProfile";
 import AboutUs from "../Components/AboutUs/AboutUs";
 import Login from "../Components/Login/Login";
 import UpdateProfile from "../Components/UpdateProfile/UpdateProfile";
-import Gallery from "../Components/Gallery/Gallery";
 import Contact from "../Components/Contact/Contact";
 
 const router = createBrowserRouter([
@@ -52,10 +51,6 @@ const router = createBrowserRouter([
           path:'/contact',
           element: <PrivateRoute><Contact></Contact></PrivateRoute>
         },
-        {
-          path: '/',
-          element:<Gallery></Gallery>
-        }
       ]
     },
   ]);

@@ -9,7 +9,7 @@ const UserProfile = () => {
     const { photoURL, displayName, email } = user;
     // console.log(user);
     return (
-        <div className="w-full lg:w-[1180px] mx-auto">
+        <div className="w-full lg:w-[1280px] mx-auto px-5 lg:px-0">
             <Helmet>
                 <title>FactoryNexus | User Profile</title>
             </Helmet>
